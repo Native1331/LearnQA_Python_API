@@ -1,7 +1,7 @@
 import requests
 
 class TestOfCookie:
-    def test_cookie():
+    def test_cookie(self):
         response = requests.get("https://playground.learnqa.ru/api/homework_cookie")
         cookie_value = (dict(response.cookies))
         actual_text = {'HomeWork': 'hw_value'}
