@@ -12,13 +12,12 @@ data = {'token': token_value}
 response1 = requests.get("https://playground.learnqa.ru/ajax/api/longtime_job", params = data)
 print(response1.text)
 status = response1.json()['status']
-
+assert status == status1 or status2, f"No job linked to this token"
 if status == status1:
-    assert status == status1, "Job is NOT ready"
-    time.sleep(time_value)
+     time.sleep(time_value)
 if status == status2:
-    result = response1.json()['result']
-    print(status,result)
+     result = response1.json()['result']
+     print(status,result)
 
 response3 = requests.get("https://playground.learnqa.ru/ajax/api/longtime_job", params = data)
 print(response3.text)
