@@ -1,0 +1,4 @@
+.idea
+.test-cache
+.pytest_cache
+.requirements.txt
