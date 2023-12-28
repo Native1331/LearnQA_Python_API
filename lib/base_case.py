@@ -32,4 +32,4 @@ class BaseCase:
                 "username": "learnqa",
                 "firstName": "learnqa",
                 "lastName": "learnqa",
-                "email": email}
+                "email": self.email}

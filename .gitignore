@@ -1,4 +1,7 @@
 .idea
 .test-cache
 .pytest_cache
+__pycache__/
 .requirements.txt
+logs/*
+.test-results
