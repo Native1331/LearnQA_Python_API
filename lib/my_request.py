@@ -1,4 +1,4 @@
-import  requests
+import requests
 from lib.logger import Logger
 import allure
 
@@ -47,4 +47,3 @@ class MyRequests():
 
         Logger.add_response(response)
         return response
-

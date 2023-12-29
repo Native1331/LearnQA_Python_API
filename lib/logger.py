@@ -25,7 +25,7 @@ class Logger:
         data_to_add += f"Request cookies: {cookies}\n"
         data_to_add += "\n"
 
-
+        cls._write_log_to_file(data_to_add)
 
     @classmethod
     def add_response(cls, response: Response):
@@ -38,3 +38,4 @@ class Logger:
         data_to_add += f"Responce cookies: {cookies_as_dict}\n"
         data_to_add += "\n-----\n"
 
+        cls._write_log_to_file(data_to_add)
